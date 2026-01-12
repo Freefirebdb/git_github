@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    width: 90%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.title {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.city {
+    flex: 1;
+    padding: 14px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 14px 20px;
+    border-radius: 30px;
+    border: none;
+    background: #ff7a18;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff9f43;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 25px;
+    color: #fff;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+.city-name {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 100px;
+}
+
+.temp {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+.condition {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.details div {
+    background: rgba(255, 255, 255, 0.25);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.details span {
+    font-size: 14px;
+}
+
+.details p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
