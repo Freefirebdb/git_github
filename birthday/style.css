@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #0a0e27, #131834);
+  color: #e0e7ff;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #26e7ff;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #00d9ff;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background: #1a1f3a;
+  padding: 25px;
+  width: 300px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+
+.nav {
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: #26e7ff;
+  cursor: pointer;
+}
+
+.months {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.months button {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #1a1f3a;
+  color: #26e7ff;
+  cursor: pointer;
+}
+
+.months button:hover {
+  background: #26e7ff;
+  color: #0a0e27;
+}
+
+.list {
+  margin-top: 15px;
+}
+
+.item {
+  background: #1a1f3a;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
