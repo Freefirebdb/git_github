@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Callback Calculator</title>
+
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 200px;
+    margin-left: 300px;
+    background-color: #f0f0f0;
+  }
+
+  .calculator {
+    border: none;
+    width: 250px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #1c1c1c;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+
+  #display {
+    width: 230px;
+    height: 60px;
+    font-size: 30px;
+    margin-bottom: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    text-align: right;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+  }
+
+  button.number {
+    background-color: #424141;
+    color: white;
+  }
+  button.number:hover {
+    background-color: #6b6b6b;
+  }
+
+  button.operator {
+    background-color: #e58806;
+    color: white;
+  }
+  button.operator:hover {
+    background-color: #e3860b;
+  }
+
+  button.clear {
+    background-color: #d3d3d0;
+    color: black;
+  }
+  button.clear:hover {
+    background-color: #f1f1f0;
+  }
+
+  button.equal {
+    background-color: #fc970a;
+    color: white;
+  }
+  button.equal:hover {
+    background-color: #fca22d;
+  }
+
+</style>
+
+</head>
+
+<body>
+  <div class="calculator">
+  <input id="display">
+  <br>
+
+  <div>
+    <button class="number" onclick="p(1)">1</button>
+    <button class="number" onclick="p(2)">2</button>
+    <button class="number" onclick="p(3)">3</button>
+    <button class="operator" onclick="p('+')">+</button>
+  </div>
+  <br>
+
+  <div>
+    <button class="number" onclick="p(4)">4</button>
+    <button class="number" onclick="p(5)">5</button>
+    <button class="number" onclick="p(6)">6</button>
+    <button class="operator" onclick="p('-')">-</button>
+  </div>
+  <br>
+
+  <div>
+    <button class="number" onclick="p(7)">7</button>
+    <button class="number" onclick="p(8)">8</button>
+    <button class="number" onclick="p(9)">9</button>
+    <button class="operator" onclick="p('*')">*</button>
+  </div>
+  <br>
+
+  <div>
+    <button class="number" onclick="p(0)">0</button>
+    <button class="equal" onclick="cal()">=</button>
+    <button class="clear" onclick="clr()">AC</button>
+    <button class="operator" onclick="p('/')">/</button>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
